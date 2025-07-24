@@ -1,0 +1,74 @@
+<Window x:Class="GlitchOverlay.PresetNameDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Preset"
+        Height="200" Width="400"
+        Background="#1A1A1A"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        Icon="favicon.ico">
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" 
+                   Text="CREATE NEW PRESET" 
+                   Foreground="#00FF41"
+                   FontFamily="Consolas"
+                   FontWeight="Bold"
+                   FontSize="16" 
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+        
+        <TextBlock Grid.Row="1" 
+                   Text="Preset Name:" 
+                   Foreground="#00FF41"
+                   FontFamily="Consolas"
+                   FontWeight="Bold"
+                   Margin="0,0,0,10"/>
+        
+        <TextBox Grid.Row="2" 
+                 x:Name="PresetNameTextBox"
+                 Background="#2A2A2A"
+                 Foreground="#00FF41"
+                 BorderBrush="#404040"
+                 BorderThickness="2"
+                 FontFamily="Consolas"
+                 FontSize="14"
+                 Padding="10,8"
+                 Margin="0,0,0,20"/>
+        
+        <StackPanel Grid.Row="4" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right">
+            <Button Content="CREATE" 
+                    x:Name="CreateButton"
+                    Background="#2A2A2A"
+                    Foreground="#00FF41"
+                    BorderBrush="#404040"
+                    BorderThickness="1"
+                    FontFamily="Consolas"
+                    FontWeight="Bold"
+                    Padding="20,8"
+                    Margin="0,0,10,0"
+                    Click="OnCreateClick"/>
+            <Button Content="CANCEL" 
+                    x:Name="CancelButton"
+                    Background="#2A2A2A"
+                    Foreground="#FF4141"
+                    BorderBrush="#404040"
+                    BorderThickness="1"
+                    FontFamily="Consolas"
+                    FontWeight="Bold"
+                    Padding="20,8"
+                    Click="OnCancelClick"/>
+        </StackPanel>
+    </Grid>
+</Window>
