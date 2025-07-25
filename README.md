@@ -179,4 +179,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by DexopT** | **© 2024 All Rights Reserved**
+**Made with ❤️ by DexopT** | **© 2025 All Rights Reserved**
